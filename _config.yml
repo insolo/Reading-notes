@@ -1,0 +1,5 @@
+baseurl: /
+markdown: rdiscount
+url: 
+author: Alfie
+pygments: true
