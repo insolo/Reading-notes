@@ -1,9 +1,9 @@
 ---
-title: Mommy 's diary
+title: Reading seriously
 layout: page
 ---
 
-<ul class="listing">
+<ul>
 {% for post in site.posts %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}

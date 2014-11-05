@@ -1,37 +1,78 @@
----
-layout: default
----
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://readingseriously.com/style.css">
+ </head>
+ <body>
+  
+    <div class=" blog-masthead">
+	    <div class="row">
+      <div class="container">
+        <nav class="col-sm-10 col-sm-offset-1 blog-nav">
+          <a class="blog-nav-item active" href="http://readingseriously.com/">Home</a>
+          <a class="blog-nav-item" href="http://readingseriously.com/#">About</a>
+        </nav>
+      </div>
+        </div>
+    </div>
+	
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 blog-header">
+      </div>
+<!--blog content from here-->
+	  <div class="col-sm-10 col-sm-offset-1 blog-main">
 
-<section class="post">
-{{ content }}
-</section>
-<section class="meta">
-<span class="author">
-{{ site.author }}
-</span>
-<span class="time">
-  /
-  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
-</span>
-<br />
-<!--<span class="license">
-  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
-</span>
-{% if page.categories %}
-<span class="categories">
-  in categories
-  {% for cat in page.categories %}
-  <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
-  {% endfor %}
-</span>
-{% endif %}
-{% if page.tags %}
-<span class="tags">
-  tagged with 
-  {% for tag in page.tags %}
-  <a href="{{ site.url }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
-  {% endfor %}
-</span>
-{% endif %}-->
-</section>
-<!-- {% include comments.md %}->
+          <div class="blog-post">
+            <h2 class="blog-post-title">{{ page.title }}</h2>
+            <p class="blog-post-meta">{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }} by <a href="http://readingseriously.com/">{{ site.author }}</a></p>
+             {{ content }}  
+            
+          </div>
+
+
+ 
+<!--
+          <nav>
+            <ul class="pager">
+              <li><a href="http://readingseriously.com/#">Previous</a></li>
+              <li><a href="http://readingseriously.com/#">Next</a></li>
+            </ul>
+          </nav>
+-->
+       </div><!-- /.blog-main -->
+<!--
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+            </ol>
+          </div>
+
+        </div>
+-->
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="http://readingseriously.com/#">Back to top</a>
+      </p>
+    </div>
+
+
+  
+  
+</body></html>
