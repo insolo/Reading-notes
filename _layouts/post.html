@@ -29,9 +29,8 @@
 
           <div class="blog-post">
             <h2 class="blog-post-title">{{ page.title }}</h2>
-            <p class="blog-post-meta">{{ page.date | date:"%Y-%m-%d" }} by <a href="http://readingseriously.com/">{{ site.author }}</a></p>
+            <p class="blog-post-meta">{{ page.date | date:"%Y-%m-%d" }} by {{ page.author }}</p>
              {{ content }}  
-            
           </div>
 
 
