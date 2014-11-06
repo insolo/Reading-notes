@@ -1,7 +1,6 @@
 ---
 layout: post
 author: Phenix Zhong
-tags: 杂文
 title: 关于严肃阅读及思考以及开篇
 ---
 
